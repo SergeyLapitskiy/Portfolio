@@ -1,5 +1,27 @@
 input {
     width: 70px; 
     height: 30px; 
-    border-radius: 5px;x;
+    border-radius: 5px;
+    outline: none
 }
+
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: #53BA88;
+}
+
+
+#d19 {
+width: 0; height: 0;
+border: 100px solid transparent;
+border-bottom-color: #53BA88;
+position: relative; top: -20px;}
+#d19:after {
+content: "";
+width: 0; height: 0;
+position: absolute; left: -100px; top: 100px;
+border: 100px solid transparent;
+border-top-color: #53BA88;}
+
+  
