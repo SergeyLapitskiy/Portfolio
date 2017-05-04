@@ -1,6 +1,6 @@
 input {
-    width: 70px; 
-    height: 30px; 
+    width: 70px;
+    height: 30px;
     border-radius: 5px;
     outline: none
 }
@@ -11,6 +11,19 @@ input {
 	background: #53BA88;
 }
 
+#Table {
+	width: 400px;
+	margin:0 auto;
+  text-align: left;
+  font-size: 150%;
+  margin-top: 30px;
+
+}
+
+.mCheckbox {
+  height: 20px;
+  width: 20px;
+}
 
 #d19 {
 width: 0; height: 0;
@@ -23,5 +36,3 @@ width: 0; height: 0;
 position: absolute; left: -100px; top: 100px;
 border: 100px solid transparent;
 border-top-color: #53BA88;}
-
-  

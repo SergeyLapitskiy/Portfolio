@@ -26,18 +26,19 @@ var uslugi = [
 ]
 
 var cal = document.getElementById('calc');
+var tab = document.getElementById('Table');
 var priseSum =0;
 var vivodSum ;
 
-console.log(cal);
-console.log(uslugi[1].prise);
+// console.log(cal);
+// console.log(uslugi[1].prise);
 
 for(var i=0; i<uslugi.length;i++){
-    cal.innerHTML +=`${uslugi[i].name} <input type="checkbox" class="mCheckbox">  <td>${uslugi[i].prise}<br>`
+    tab.innerHTML +=`<tr><td>${uslugi[i].name}</td> <td><input type="checkbox" class="mCheckbox"></td>  <td>${uslugi[i].prise}</td></tr>`
 }
 
 
-cal.innerHTML += `<div id="vivodSum"></div>`;
+tab.innerHTML += `<div id="vivodSum"></div>`;
 vivodSum = document.getElementById('vivodSum');
 vivodSum.innerHTML = `<br>Сумма = ${priseSum}`;
 
@@ -48,7 +49,7 @@ window.onclick = function() {
     for(var i=0; i<mCheckbox.length; i++){
         if (mCheckbox[i].checked) {
       priseSum += uslugi[i].prise;
-      
+
     }
     vivodSum.innerHTML = `<br>Сумма = ${priseSum}<br>`;
         if(priseSum>20000){
@@ -57,7 +58,7 @@ window.onclick = function() {
         }
     }
 }
-     
+
 
 
 /*for(var i=0;i<mCheckbox.length;i++){
@@ -68,9 +69,7 @@ window.onclick = function() {
         console.log(e.target.type);
         //alert( this.value );
     } else {
-        
+
     }
 };
 }*/
-
-
